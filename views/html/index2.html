@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">Авторизация</div>
+<div class="footer">2016 год</div>
+<div id="content">
+    <div class="mainLayer">
+        <div id="mess">
+            <span id="inner_text_message"></span>
+        </div>
+        <div class="table" id="table">
+            <div>Пожалуйста, заполните поля ниже</div>
+            <div>Ваши данные:</div>
+            <div class="tr">
+                <label>
+                    <span>Имя пользователя</span>
+                    <input type="text" name="Name" requaried size="25" class="in" id="Name" oninput="checkValidLogin('Name')">
+                </label>
+            </div>
+            <div class="tr">
+                <label>
+                    <span>Пароль</span>
+                    <input type="password" name="Name" requaried size="25" class="in" id="Password" onfocusout="checkValidPassword('Password')">
+                </label>
+            </div>
+        </div>
+    </div></div>
+</body>
+<script src="../js/validity.js"></script>
+</html>
